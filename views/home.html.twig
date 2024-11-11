@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SnapPHP Home{% endblock %}
+
+{% block content %}
+<div class="container">
+	<h1>{{ message }}</h1>
+	
+    <p>This is a lightweight PHP framework designed to help you build faster and simpler applications.</p>
+    
+    <div>
+    	<button class="button link"><a href="https://github.com/dinzin-tech" target="_blank">Go To Repo</a></button>
+    	<button class="button link"><a href="{{ route('about') }}">About</a></button>
+    </div>
+</div>
+{% endblock %}
